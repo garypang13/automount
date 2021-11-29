@@ -8,7 +8,7 @@
 #
 
 [ "$(uci -q get ksmbd.@globals[0].autoshare)" == "1" ] && {
-/etc/init.d/samba4 restart
+/etc/init.d/ksmbd restart
 exit 0;
 }
 
